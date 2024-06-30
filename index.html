@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encrypt Decrypt App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="homeWrapper">
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img
+          src="images/Logo2x.png"
+          alt="logo"
+          class="homeLogo"
+          title="Alura Cursos"
+        />
+      </a>
+      <div class="homeContainer">
+        <div class="homeMainContainer">
+          <div class="textareaContainer">
+            <textarea
+              name="textarea"
+              placeholder="Ingrese el texto aquí"
+              class="textarea"
+              maxlength="200"
+              required
+            ></textarea>
+          </div>
+          <div class="actionsContainer">
+            <p class="clousureContainer">
+              <i class="exclamationIcon">&#x26A0;</i> Solo letras minúsculas y
+              sin acentos
+            </p>
+            <div class="homeButtonContainer">
+              <button
+                class="firstButton"
+                onmouseover="handleMouseOver()"
+                onmouseout="handleMouseOut()"
+                onclick="handleEncrypt()"
+              >
+                Encriptar
+              </button>
+              <button
+                class="secondButton"
+                onmouseover="handleMouseOver()"
+                onmouseout="handleMouseOut()"
+                onclick="handleDecrypt()"
+              >
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- !RESULT COMPONENT -->
+        <div class="resultWrapper">
+          <div class="resultMainContainer">
+            <img src="images/Muñeco.png" alt="img" class="image" />
+            <div class="textContainer">
+              <h1>Ningún mensaje fue encontrado</h1>
+              <p class="advice">
+                Ingresa el texto que deseas encriptar o desencriptar
+              </p>
+            </div>
+          </div>
+          <button class="copyButton" onclick="copyToClipboard()">Copiar</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
