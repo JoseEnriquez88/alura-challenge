@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   padding: 0;
   margin: 0;
@@ -32,7 +31,7 @@ a {
   --main-background: #e7e5e5;
 }
 
-/* Home Component Styles */
+/*! Home Component Styles */
 .homeWrapper {
   height: 100vh;
 }
@@ -166,6 +165,91 @@ a {
   background-color: var(--dark-blue-300);
 }
 
+/*! Desde aca va los estilos de RESULT COMPONENT */
+/* .resultWrapper { */
+
+.resultMainContainer {
+  background-color: #ffffff;
+  border-radius: 32px;
+  width: 500px;
+  height: 84.3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.image {
+  width: 335px;
+  margin-top: 100px;
+  background-color: transparent;
+}
+
+.textContainer {
+  background-color: transparent;
+  width: 100%;
+  color: #000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.processedText {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dark-blue-400);
+  text-align: left;
+  padding: 50px;
+  background: transparent;
+  word-break: break-word;
+}
+
+.textContainer h1 {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.advice {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+.copyButton {
+  width: 100%;
+  height: 67px;
+  border-radius: 24px;
+  background-color: var(--dark-blue-300);
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: var(--light-blue-300);
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.copyButton:hover {
+  border: 1px solid var(--dark-blue-300);
+  color: black;
+  background-color: transparent;
+}
+
+/*! Aca empiezan los estilos responsive */
+
 @media (max-width: 768px) {
   .homeContainer {
     width: 90vw;
@@ -180,7 +264,6 @@ a {
 
   .textareaContainer {
     width: 100%;
-    /* display: none; */
   }
 
   /* .actionsContainer { */
@@ -189,8 +272,11 @@ a {
     width: 90vw;
   }
 
+  /*! Result styles responsive */
+
   .resultWrapper {
     margin-top: 50px;
+    width: 100%;
   }
 
   .image {
@@ -198,7 +284,7 @@ a {
   }
 
   .resultMainContainer {
-    width: 90vw;
+    width: 100%;
   }
 
   .textContainer {
@@ -315,89 +401,4 @@ a {
   .copyButton {
     width: 100%;
   }
-}
-
-/* Desde aca va los estilos de RESULT COMPONENT */
-.resultWrapper {
-  margin-top: 50px;
-}
-
-.resultMainContainer {
-  background-color: #ffffff;
-  border-radius: 32px;
-  width: 500px;
-  height: 84.3%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.image {
-  width: 335px;
-  margin-top: 200px;
-  background-color: transparent;
-}
-
-.textContainer {
-  background-color: transparent;
-  width: 100%;
-  color: #000;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.processedText {
-  width: 90%;
-  margin: 0 auto;
-  font-size: 32px;
-  font-weight: 400;
-  color: var(--dark-blue-400);
-  text-align: left;
-  padding: 50px;
-  background: transparent;
-  word-break: break-word;
-}
-
-.textContainer h1 {
-  background-color: transparent;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28.8px;
-  text-align: center;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.advice {
-  background-color: transparent;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: var(--gray-400);
-}
-
-.copyButton {
-  width: 100%;
-  height: 67px;
-  border-radius: 24px;
-  background-color: var(--dark-blue-300);
-  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    color 0.3s ease-in-out;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.36px;
-  color: var(--light-blue-300);
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.copyButton:hover {
-  border: 1px solid var(--dark-blue-300);
-  color: black;
-  background-color: transparent;
 }
