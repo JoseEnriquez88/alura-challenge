@@ -248,6 +248,72 @@ a {
   background-color: transparent;
 }
 
+/* !Aca empiezan los estilos del footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: transparent;
+  border-top: 1px solid var(--gray-200);
+  padding: 1rem;
+  color: var(--color-text-color);
+  z-index: 2;
+  bottom: 0;
+  transition: border 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footerLinksContainer {
+  display: flex;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footerLinksContainer a {
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footerLinksContainer a:hover {
+  color: var(--color-primary);
+}
+
+.logo {
+  width: 25px;
+  margin-left: -18px;
+}
+
+.footerTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+  color: var(--color-copyright);
+  margin-bottom: -10px;
+  font-size: 12px;
+  font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+}
+
+.footerLinksContainer a {
+  color: var(--dark-blue-500);
+  font-size: 25px;
+}
+
+.footerLinksContainer a:hover {
+  color: var(--dark-blue-100);
+}
+
 /*! Aca empiezan los estilos responsive */
 
 @media (max-width: 768px) {
@@ -321,6 +387,16 @@ a {
 
   .advice {
     font-size: 20px;
+  }
+
+  /*!Footer styles */
+  .footer {
+    border-top: 1px solid var(--gray-200);
+    margin-top: 500px;
+  }
+
+  .footerLinksContainer a {
+    font-size: 25px;
   }
 }
 
@@ -400,5 +476,15 @@ a {
 
   .copyButton {
     width: 100%;
+  }
+
+  /*!Footer styles */
+  .footer {
+    border-top: 1px solid var(--gray-200);
+    padding-top: 200px;
+  }
+
+  .footerLinksContainer a {
+    font-size: 25px;
   }
 }
